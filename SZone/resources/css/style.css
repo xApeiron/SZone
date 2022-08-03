@@ -41,6 +41,7 @@ header {
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	background-attachment: fixed;
 }
 
 .header-box {
@@ -77,10 +78,11 @@ h2 {
 	text-decoration: none;
 	padding: 10px 30px;
 	border-radius: 200px;
+	display: inline-block;
 }
 .btn-full:link,
 .btn-full:visited {
-	background-color:#6B863A;
+ 	background-color:#6B863A;
 	color: #fff;
 
 }
@@ -90,10 +92,13 @@ h2 {
 	background-color: #39471f;
 }
 
+
+
+
 .btn-ghost:link,
 .btn-ghost:visited {
 	border:2px solid; #6b863a;
-	color:#6b863a ;
+	color:#6b863a;
 }
 
 .btn-ghost:hover,
@@ -143,6 +148,30 @@ margin-top: 55px;
 	float: left;
 }
 
+.sticky-nav {
+	position:fixed;
+	left:0;
+	top:0;
+	background-color:rgba(255,255,255,.8);
+	width:100%;
+	box-shadow: 0 2px 2px #efefef;
+	z-index:999;
+}
+
+.sticky-nav .logo {
+	height:60px;
+	margin-top:3px;
+}
+
+.sticky-nav .main-nav {
+	margin-top:18px;
+}
+
+.sticky-nav .main-nav li a:link,
+.sticky-nav .main-nav li a:visited {
+	color:#555;
+	padding:5px 0;
+}
 
 /***** ABOUT SECTION *****/
 
@@ -248,6 +277,10 @@ margin-top: 55px;
 
 /*****************SERVICES SECTION *************************/
 
+.service-box {
+	padding: 1% 3%;
+}
+
 .services-section {
 	text-align: center;
 	background-color: #f4f4f4;
@@ -262,7 +295,7 @@ margin-top: 55px;
 	margin-top: 50px;
 }
 
-.service-subheading {
+.services-subheading {
 
     font-size: 150%
     color: #555;
@@ -270,12 +303,348 @@ margin-top: 55px;
 	text-align: center;
 	margin-bottom:30px;
 }
-
-.service-subheading:after {
+.services-subheading:after{
 	display: block;
 	height: 2px;
 	width: 100px;
 	background-color: #87CF39;
 	content: "";
 	margin:30px auto 0 auto;
+}
+
+
+
+.big-icon {
+	font-size: 250%;
+	color: #87CF39;
+	display: block;
+	margin-bottom: 30px;
+
+}
+.services-sub-heading {
+	font-size: 150%;
+	margin-bottom:30px;
+}
+.service-para {
+	color:  #555;
+	font-size: 120%;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+.service-link {
+	color: #87CF39;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 200;
+}
+
+/**** PARTNERS SECTION *****/
+
+.partners-section {
+	text-align:center;
+	background-color: #f4f4f4;
+}
+
+.partner-logo {
+	width:65%;
+	height:auto;
+}
+
+.partner-heading {
+	font-size: 250%;
+	color: #87CF39;
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	margin-top: 50px;
+}
+
+.partner-subheading {
+
+    font-size: 150%
+    color: #555;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom:30px;
+}
+.partner-subheading:after {
+	display: block;
+	height: 2px;
+	width: 100px;
+	background-color: #87CF39;
+	content: "";
+	margin:30px auto 0 auto;
+}
+
+/*********** TESTIMONIALS SECTIONS *****************/
+
+.testimonials-section {
+	background-image:linear-gradient(rgba(0, 0, 0, .3),rgba(0, 0, 0, .5)), url(img/testimonial.jpg);
+	text-align: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.testimonials-heading {
+	font-size: 250%;
+	margin-bottom: 30px;
+	margin-top: 150px;
+}
+
+.testimonial-box {
+	text-align: left;
+	margin-bottom: 50px;
+}
+
+blockquote {
+	padding: 2%;
+	font-style: italic;
+	line-height: 145%;
+	color: #fff;
+	margin-top: 40px;
+}
+
+blockquote:before {
+	content: "\201C";
+	display: block;
+	font-size: 400%;
+	position: absolute;
+	margin-left: -5px;
+	margin-top: -10px;
+
+}
+
+cite {
+	color: #fff;
+	display: block;
+	margin-top: 25px;
+	font-size: 100%;
+}
+
+cite img {
+	border-radius: 50%;
+	height: 20%;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+
+
+
+/****************** PACKAGES SECTION *********************/
+
+.packages-section {
+	text-align: center;
+	background-color: #fff;
+}
+
+.packages-heading {
+	color: #000;
+	font-size: 250%;
+	margin-bottom: 20px;
+	margin-top: 150px;
+}
+
+.package-box {
+	background-color: #f4f4f4;
+	width: 90%;
+	margin-bottom: 30px;
+	box-shadow:0 3px 2px #efefefef;
+	text-align: left;
+}
+.package-box ul {
+	list-style: none;
+
+}
+
+.package-heading {
+	font-size: 150%;
+	color: #87CF39;
+	margin-bottom: 50px;
+}
+
+.package-heading span {
+	margin-left: 160px;
+}
+
+.package-price {
+	color: #87CF39;
+	font-size: 300%;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.package-price span {
+	font-size: 30%;
+	font-weight: 1000;
+	margin-left: 10px;
+}
+
+.package-para {
+	color: #fff;
+	font-size: 80%;
+	margin-bottom: 10px;
+	font-weight: 1000;
+}
+
+.small-icon {
+	color: #87CF39;
+	font-size: 120%;
+	display: inline-block;
+	margin-right: 10px;
+	width: 30px;
+	text-align: center;
+}
+
+.package-box ul li {
+	color: #000;
+	padding: 5px 0;
+	font-weight: 700;
+}
+
+.package-box div {
+	padding: 15px;
+	border-bottom: 1px solid #87CF39;
+}
+
+.package-box div:last-child {
+	border:0;
+	text-align: center;
+	padding-left: 0;
+}
+.package-box div:first-child {
+	background-color: #555;
+}
+
+/*************CONTACT FORM SECTION **************/
+
+.contact-section {
+	text-align: center;
+	background-color: #fff;
+
+}
+
+.contact-heading {
+	color: #000;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.contact-form {
+	width: 60%;
+	text-align: left;
+	margin: 0 auto;
+	font-weight: 1000;
+	color:  #555;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+	width: 100%;
+	padding: 8px;
+	border-radius: 3px;
+	border: 1px soli #87CF39;
+}
+
+input [type=checkbox] {
+	margin: 10px 5px 10px 0;
+}
+
+textarea {
+	height: 100px;
+}
+.newsletter {
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+*:focus {
+	outline: none;
+}
+
+/*********** FOOTER SECTION ************/
+footer {
+	background-color: #333;
+	padding: 50px;
+	font-size: 80%;
+	color: #888;
+
+}
+
+.footer-nav {
+float: left;
+}
+.social-links {
+	float: right;
+}
+
+.footer-nav li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+	color:  #888;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+	color: #fff;
+
+}
+
+.social-links li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 200%;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-google-plus-g,
+.fa-instagram {
+	transition: color:  1s;
+}
+
+
+
+.fa-facebook:hover {
+	color: #3b5998;
+}
+.fa-twitter:hover {
+	color: #55acee;
+}
+.fa-google-plus-g:hover {
+	color: #dd4b39;
+}
+
+.fa-instagram:hover {
+	color: #517fa4;
+}
+
+
+footer p {
+	text-align: center;
+	margin-top: 50px;
+	line-height: 1.5;
+}
+
+/********** JQUERY ANIMATE ON SCROLL *****/
+
+.js--about-box {
+	opacity: 0;
+	animation-duration: 1s;
+}
+
+.js--about-box.animate__animated {
+	opacity: 1;
 }
