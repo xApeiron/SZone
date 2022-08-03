@@ -5,6 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/ccf336686e.js" crossorigin="anonymous"></script>
 
+	<link rel="apple-touch-icon" sizes="180x180" href="vendors/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="vendors/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="vendors/favicon/favicon-16x16.png">
+    <link rel="manifest" href="vendors/favicon/site.webmanifest">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="vendors/css/fluid.css">
@@ -15,13 +20,13 @@
 
 </head>
 <body>
-	<header>
+	<header id="home">
 		<nav>
 			<img src="resources/img/logo4.jpg" alt="LOGO" class="logo">
 			<ul class="main-nav">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">About US</a></li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#about">About US</a></li>
 			</ul>
 
 		</nav>
@@ -30,11 +35,11 @@
 			  <h1 class="animate__animated animate__pulse">Survivor Zone</h1>
 			  <h2>The place for people who love Nature</h2>
 		  </div>
-		  <a href="#" class="btn btn-full"> Get your tools TODAY!</a>
+		  <a href="#" class="btn btn-full js--scroll-to-contact"> Get your tools TODAY!</a>
 	</div>
 	</header>
 
-	<section class="about-section js--about-section">
+	<section class="about-section js--about-section" id="about">
 		<div class="row">
 			
 			<div class="col span_1_of_2 about-box js--about-box">
@@ -292,7 +297,7 @@
 	</div>
 </section>
 
-<section class="contact-section">
+<section class="contact-section js--contact" id="contact">
 	<div class="row">
 		<h2 class="contact-heading">We're happy to hear from you</h2>
 	</div>
